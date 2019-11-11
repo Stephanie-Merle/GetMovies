@@ -212,24 +212,36 @@ nav li:hover {
   }
   .container {
     margin: auto;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
   .movieCard {
-    height: 150px;
+    height: 200px;
+    width: 70%;
   }
   .info {
     padding: 0.2em;
   }
   .info p:last-child {
     height: 66%;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     overflow: hidden;
-    align-items: flex-start;
   }
   .movieCard img {
     width: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .movieCard {
+    height: 150px;
+    width: 90%;
+  }
+  .info p:last-child {
+    align-items: flex-start;
+    font-size: 0.6rem;
+  }
+  .movieCard {
+    height: 150px;
   }
 }
