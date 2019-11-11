@@ -1,22 +1,74 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #09d3ac;
+.header {
+  display: flex;
+  background-color: #fecc00;
+  height: 90px;
+  align-items: center;
+}
+.header img {
+  height: 70px;
+  margin: auto auto auto 13em;
+}
+nav {
+  height: 70px;
+
+  align-items: center;
+  align-content: center;
+}
+nav ul {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  display: inline-flex;
+
+  margin: auto auto auto 13em;
+}
+nav li {
+  font-size: 1.2rem;
+  margin: auto;
+}
+nav li:hover {
+  color: red;
+}
+.selected {
+  padding: 0.3em;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.568);
+}
+.selected:hover {
+  color: initial;
+}
+.movieCard {
+  margin: 1em auto;
+  height: 220px;
+  display: inline-flex;
+  background-color: ivory;
+  width: 45%;
+}
+.movieCard img {
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+  image-resolution: 100%;
+}
+.container {
+  margin-left: 13em;
+  margin-right: 13em;
+  justify-content: space-between;
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info {
+  padding: 1em;
 }
