@@ -1,3 +1,12 @@
+# Project
+
+React project with API. CI with Netlify >> https://what2watch2night.netlify.com/
+
+## Author
+
+- [Stephanie Merle](https://github.com/Stephanie-Merle)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
