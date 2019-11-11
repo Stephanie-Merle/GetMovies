@@ -1,14 +1,14 @@
 import React from "react";
-import Image from "../assets/Screenshot.png";
 
-const MovieCard = () => {
+const MovieCard = props => {
   return (
     <div className="movieCard">
-      <img src={Image} alt="" />
+      <img src={props.cover} alt="" />
+
       <div className="info">
-        <h3>Ant-man</h3>
-        <p>july 2016</p>
-        <p>Description</p>
+        <h3>{props.title}</h3>
+        <p>{props.date}</p>
+        <p>{props.synopsis}</p>
       </div>
     </div>
   );

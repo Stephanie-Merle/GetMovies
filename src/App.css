@@ -5,7 +5,7 @@ body {
   font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f4f4;
+  background-color: #f3f1f1;
   justify-content: center;
   box-sizing: border-box;
 }
@@ -17,8 +17,8 @@ body {
   align-items: center;
 }
 .header img {
-  height: 70px;
-  margin: auto auto auto 13em;
+  height: 100%;
+  margin: auto auto auto 8em;
 }
 nav {
   height: 70px;
@@ -32,7 +32,7 @@ nav ul {
   width: 40%;
   display: inline-flex;
 
-  margin: auto auto auto 13em;
+  margin: auto auto auto 8em;
 }
 nav li {
   font-size: 1.2rem;
@@ -51,9 +51,10 @@ nav li:hover {
 .movieCard {
   margin: 1em auto;
   height: 220px;
-  display: inline-flex;
+  display: flex;
   background-color: ivory;
   width: 45%;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.438);
 }
 .movieCard img {
   height: 100%;
@@ -62,13 +63,129 @@ nav li:hover {
   image-resolution: 100%;
 }
 .container {
-  margin-left: 13em;
-  margin-right: 13em;
+  margin-left: 8em;
+  margin-right: 8em;
   justify-content: space-between;
   align-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
+.info p:last-child {
+  display: flex;
+  font-size: 0.7rem;
+  height: 86%;
+  align-items: center;
+}
 .info {
   padding: 1em;
+}
+.info h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+
+.loading {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-content: center;
+}
+.loading * {
+  align-self: center;
+}
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-spinner div {
+  transform-origin: 32px 32px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 29px;
+  width: 5px;
+  height: 14px;
+  border-radius: 20%;
+  background: #fecc00;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.pages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pages svg {
+  margin: 1em 4em;
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.664);
+  border-radius: 0.7em;
+}
+.pages svg:hover {
+  background-color: #313131ad;
+  color: #fecc00;
 }

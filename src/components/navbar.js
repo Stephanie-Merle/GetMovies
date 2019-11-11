@@ -1,12 +1,18 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = props => {
   return (
     <nav>
       <ul>
-        <li>Popular movies</li>
-        <li className="selected">Upcoming movies</li>
-        <li>Top Rated movies</li>
+        <li className={props.selection === "popular" ? "selected" : null}>
+          <button onClick={props.popular}>Popular movies</button>
+        </li>
+        <li className={props.selection === "upcoming" ? "selected" : null}>
+          <button onClick={props.upcoming}>Upcoming movies</button>
+        </li>
+        <li className={props.selection === "top_rated" ? "selected" : null}>
+          <button onClick={props.top}>Top rated movies</button>
+        </li>
       </ul>
     </nav>
   );
