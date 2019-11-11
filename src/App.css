@@ -22,7 +22,6 @@ body {
 }
 nav {
   height: 70px;
-
   align-items: center;
   align-content: center;
 }
@@ -31,7 +30,6 @@ nav ul {
   height: 100%;
   width: 40%;
   display: inline-flex;
-
   margin: auto auto auto 8em;
 }
 nav li {
@@ -42,7 +40,7 @@ nav li:hover {
   color: red;
 }
 .selected {
-  padding: 0.3em;
+  padding: 0.2em;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.568);
 }
 .selected:hover {
@@ -50,10 +48,11 @@ nav li:hover {
 }
 .movieCard {
   margin: 1em auto;
-  height: 220px;
+  height: 250px;
   display: flex;
   background-color: ivory;
   width: 45%;
+  min-width: 450px;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.438);
 }
 .movieCard img {
@@ -74,11 +73,15 @@ nav li:hover {
   display: flex;
   font-size: 0.7rem;
   height: 86%;
+  margin-top: 0.5rem;
   align-items: center;
 }
 .info {
   padding: 1em;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
 }
+
 .info h3 {
   font-weight: bold;
   font-size: 1rem;
@@ -188,4 +191,9 @@ nav li:hover {
 .pages svg:hover {
   background-color: #313131ad;
   color: #fecc00;
+}
+@media screen and (max-width: 900px) {
+  nav li {
+    font-size: 0.8rem;
+  }
 }
