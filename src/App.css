@@ -52,7 +52,7 @@ nav li:hover {
   height: 250px;
   display: flex;
   background-color: ivory;
-  width: 45%;
+  width: 47%;
   min-width: 300px;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.438);
 }
@@ -71,11 +71,11 @@ nav li:hover {
   flex-wrap: wrap;
 }
 .info p:last-child {
-  display: flex;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  display: block;
+  text-overflow: ellipsis;
   height: 86%;
   margin-top: 0.5rem;
-  align-items: center;
 }
 .info {
   padding: 1em;
@@ -193,7 +193,7 @@ nav li:hover {
   background-color: #313131ad;
   color: #fecc00;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   nav li {
     font-size: 0.8rem;
   }
@@ -202,7 +202,7 @@ nav li:hover {
   }
   nav ul {
     margin: auto;
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     height: 50px;
     width: 100%;
     justify-content: space-around;
@@ -218,14 +218,16 @@ nav li:hover {
   }
   .movieCard {
     height: 200px;
-    width: 70%;
+    width: 65%;
   }
   .info {
-    padding: 0.2em;
+    padding: 0.4em;
   }
   .info p:last-child {
     height: 66%;
     font-size: 0.9rem;
+    align-items: flex-start;
+    text-overflow: ellipsis;
     overflow: hidden;
   }
   .movieCard img {
